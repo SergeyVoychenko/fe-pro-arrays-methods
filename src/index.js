@@ -73,7 +73,7 @@ const rangeFilter = (from, to) => {
 };
 
 const minPriceReducer = () => {
-  return goods.reduce((sum = item.price, item) => sum > item.price ? item.price: sum);
+  return goods.reduce((sum, item) => sum > item.price ? item.price: sum, 0);
  
  }
 
